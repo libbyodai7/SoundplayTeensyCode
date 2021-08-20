@@ -1,10 +1,13 @@
 #include <HCSR04.h>
-const int channel = 3;
+const int channel = 3; // change channel valure here
 
 float data;
+
+float minimumDistance = 2.0; //change minimum distance here (cm)
+float maximumDistance = 70.0; //change maximum distance here (cm)
 byte current_value;
 byte previous_value;
-const int controller = 24;
+const int controller = 24; // change controlller value here
 
 UltraSonicDistanceSensor distanceSensor(0, 1);
 
@@ -19,9 +22,9 @@ void loop () {
 
  Serial.println(data);
 
-  if (data >= 2.0 && data <= 70.0) {
+  if (data >= minimumDistance && data <= maximimDistance) {
 
-    current_value = map(data, 2.0, 70.0, 30, 85);
+    current_value = map(data, minimumDistance, maximimDistance, 30, 85);
 
     Serial.println(current_value);
 
