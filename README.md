@@ -7,6 +7,12 @@ Get the parts on this list
 
 https://www.amazon.co.uk/hz/wishlist/dl/invite/gjoeKod?ref_=wl_share
 
+Order the boards from:
+
+https://aisler.net/
+
+Using the fritzing files in this repository
+
 Solder header pins and resistors onto boards
 
 Download Teensyduino 1.53
